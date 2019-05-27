@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Sergio Valde</title>
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/preload.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/knowledge.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/fullpage.css" />
+
+    <!-- CSS FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- CSS BOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Preload Page -->
+    <section id="preload" class="animated slideOutDown">
+        <h1>
+            <span>S</span><span>ergio</span>
+            <span>V</span><span>aldepeñas</span>
+            <span>d</span><span>el</span>
+            <span>P</span><span>ozo</span>
+        </h1>
+    </section>
+    <!-- End Preload Page -->
+
+    <!-- Nav Menu -->
+    <nav>
+        <ul>
+            <li>
+                <a class="navItem" id="homeNav" data-text="Home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="navItem" id="knowledgeNav" data-text="Knowledge">
+                    Knowledge
+                </a>
+            </li>
+            <li>
+                <a class="navItem" id="portfolioNav" data-text="Portfolio">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a class="navItem" id="contactNav" data-text="Contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Nav Menu -->
+    <div class="myContainer">
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="img/home_bg_video.mp4" type="video/mp4">
+                </video>
+                <div class="layer animated delay-5s fadeInUp" id="home">
+                    <div class="page-wrap light-theme">
+                        <div class="wrap-center">
+                            <header class="header">
+                                <div class="avatar">
+                                    <div class=""></div>
+                                    <img src="./img/profile.jpg" alt="Sergio Valdepeñas">
+                                </div>
+
+                                <span class="name">Sergio Valdepeñas del Pozo</span>
+                                <h1 class="hello-h1">WELLCOME</h1>
+                                <nav class="main-nav">
+                                    <span class="toggle-about"><i class="fas fa-chevron-down"></i></span>
+
+                                </nav>
+                            </header>
+
+                            <div class="about" id="about">
+                                <div class="copy-block">
+                                    <h2>About</h2>
+                                    <p>Currently living in southern Connecticut and working at BrandShop, I'm passionate about Front-End Design & Development and building scalable & fluid websites. In my free time you'll likely find me exploring and capturing
+                                        the world with an iPhone 6, Nikon D90, and more recently a 35mm Nikon N80.</p>
+                                    <h2>Ecommerce/CX</h2>
+                                    <p>The design of a site should be based upon its intended purpose. A website must not only look good, but it should work properly as well. Quality over quantity and simplicity over complexity. I believe in minimalist approach
+                                        to web design and strive to build functional, responsive, and progressively enhanced interfaces.</p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section1">
+                <div class="container h-100">
+                    <div class="row">
+                        <div id="titleKnowledge" class="col-md-12">
+                            <h2>Knowledges</h2>
+                            <h4>What I do?</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div id="skills" class="col">
+                            <h4>Java</h4>
+                            <div id="java-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="90"></span>
+                            </div>
+                            <h4>SQL</h4>
+                            <div id="sql-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="80"></span>
+                            </div>
+                            <h4>Angular</h4>
+                            <div id="angular-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="80"></span>
+                            </div>
+                            <h4>Node JS</h4>
+                            <div id="node-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="65"></span>
+                            </div>
+                            <h4>TypeScript</h4>
+                            <div id="typescript-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="70"></span>
+                            </div>
+                            <h4>HTML 5</h4>
+                            <div id="html-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="85"></span>
+                            </div>
+                            <h4>CSS 3</h4>
+                            <div id="css-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="65"></span>
+                            </div>
+                            <h4>Git / GitHub</h4>
+                            <div id="git-bar" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="75"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section2">
+                <div class="container h-100">
+                    <div class="row">
+                        <div id="titlePortfolio" class="col-md-12">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div id="portfolio" class="row mt-4 justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/portfolio_bg.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <hr>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#">Visit <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/portfolio_bg.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <hr>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#">Visit <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./img/portfolio_bg.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <hr>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#">Visit <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section3">
+                <div class="container contact-form">
+                    <div class="contact-image">
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <form method="post">
+                        <h3>Drop Us a Message</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- <div class="section" id="section2">
+                <div class="slide" id="slide1">
+                    <h1>Slide Backgrounds</h1>
+                </div>
+                <div class="slide" id="slide2">
+                    <h1>Totally customizable</h1>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+    <!-- Nav Hamburger -->
+    <div class="hamburger ">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- End Nav Hamburger -->
+
+    <!-- JS BOOTSTRAP 4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/plugin.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/jquery.barfiller.js"></script>
+
+
+</body>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#1bbc9b', 'rgb(59, 90, 98)', '#7BAABE', '#1bbc9b'],
+        afterLoad: function(origin, destination, direction) {
+            //section 1
+            if (destination.index == 1) {
+                $('#java-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 4000, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#sql-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 3500, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#angular-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 3500, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#node-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 2500, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#typescript-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 3000, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#html-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 3700, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#css-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 2500, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+                $('#git-bar').barfiller({
+                    barColor: '#19a6c9', // color of bar
+                    tooltip: true, // shows a tooltip
+                    duration: 3500, // duration in ms
+                    animateOnResize: true, // re-animate on resize
+                    symbol: "%" // custom symbol
+                });
+            }
+            //back to original state
+            else if (origin && origin.index == 1) {
+                // document.querySelector('#titleKnow').querySelector('h2').style.left = 0 + '%';
+                // document.querySelector('#titleKnow').querySelector('h3').style.left = 0 + '%';
+            }
+
+            //section 3 is using the state classes to fire the animation
+            //see the CSS code above!
+        }
+    });
+
+    // initialization();
+</script>
+
+<script>
+    $(".hamburger").click(function() {
+        $("nav").toggleClass("active");
+        $(".hamburger").toggleClass("active");
+        $(".myContainer").toggleClass("active");
+    });
+</script>
+
+<script>
+    $(".navItem").click(function(e) {
+        $("nav").toggleClass("active");
+        $(".hamburger").toggleClass("active");
+        $(".myContainer").toggleClass("active");
+    });
+
+    $("#homeNav").click(function(e) {
+        fullpage_api.moveTo(1);
+    });
+
+    $("#knowledgeNav").click(function(e) {
+        fullpage_api.moveTo(2, 0);
+    });
+
+    $("#portfolioNav").click(function(e) {
+        fullpage_api.moveTo(2, 1);
+    });
+
+    $("#contactNav").click(function(e) {
+        fullpage_api.moveTo(3);
+    });
+</script>
+
+<script>
+    // default state of bio
+    var bioActive = false;
+
+    // toggle bio with animations/timing relative to its state
+    // if closed, expand width first, then height
+    // if open, expand height first, then width
+    function toggleBio() {
+        if (bioActive == false) {
+            firstClass = 'expand-width';
+            secondClass = 'expand-height';
+            bioActive = true;
+        } else {
+            firstClass = 'expand-height';
+            secondClass = 'expand-width';
+            bioActive = false;
+        }
+
+        $(".wrap-center").toggleClass("bio-active").toggleClass(firstClass).delay(500).queue(function() {
+            $(this).toggleClass(secondClass).dequeue();
+        });
+    }
+
+    // run bio toggle on click
+    $(".btn-about, .close-about, .toggle-about").on("click", toggleBio);
+</script>
+
+</html>

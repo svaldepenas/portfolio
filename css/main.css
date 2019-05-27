@@ -1,0 +1,369 @@
+/* Style for our header texts
+	* --------------------------------------- */
+
+h1 {
+    font-size: 5em;
+    font-family: arial, helvetica;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Centered texts in each section
+	* --------------------------------------- */
+
+.section {
+    text-align: center;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    /* in case the video doesn't fit the whole page*/
+    background-image: url(img/home_bg_video.mp4);
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    /*cover video background */
+    z-index: 3;
+}
+
+
+/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+
+#section0 .layer {
+    /* position: absolute; */
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+    /*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/*solves problem with overflowing video in Mac with Chrome */
+
+#section0 {
+    overflow: hidden;
+}
+
+
+/* Bottom menu
+	* --------------------------------------- */
+
+#infoMenu li a {
+    color: #fff;
+}
+
+
+/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+
+/* --------------------------------------------------- 
+   ------------------- NAV MENU ---------------------- 
+   --------------------------------------------------- */
+
+nav {
+    position: fixed;
+    height: 100%;
+    width: 65%
+}
+
+nav::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle
+}
+
+nav ul {
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: block;
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: 1.2rem;
+    padding-left: 30%;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #eee;
+}
+
+nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    color: #19a6c9;
+    white-space: nowrap;
+}
+
+nav ul:hover li a::before {
+    animation: animate2 1s steps(10) forwards;
+}
+
+nav ul li:hover a::before {
+    animation: animate1 1s steps(10) forwards;
+}
+
+@keyframes animate2 {
+    0% {
+        width: 351.88px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 351.88px;
+    }
+}
+
+.hamburger {
+    left: 1rem;
+    top: 1rem;
+    width: 1.5rem;
+    height: .7rem;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    background-color: white;
+    height: 20%;
+    margin-bottom: 20%;
+}
+
+.myContainer {
+    position: relative;
+    background-color: #fafafa;
+    color: #262626;
+    overflow: auto;
+    transition: .2s ease;
+}
+
+.myContainer.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fafafa;
+    color: #262626;
+    /* padding: 4rem; */
+    overflow: auto;
+    transition: .2s ease;
+}
+
+.myContainer a {
+    color: #00c7b3;
+}
+
+.myContainer p {
+    padding-bottom: 1em;
+}
+
+.myContainer h4 {
+    margin: 1em 0;
+}
+
+.hamburger.active span {
+    background-color: black;
+}
+
+@media screen and (orientation:portrait) {
+    .myContainer {
+        /* padding: 4rem 1rem; */
+    }
+}
+
+@media screen and (orientation:portrait) {
+    nav.active+.myContainer {
+        transform: translateX(55%) scale(0.8);
+        box-shadow: 0 0 30px 5px rgba(38, 38, 38, 0.3);
+    }
+}
+
+@media screen and (orientation:landscape) {
+    nav.active+.myContainer {
+        transform: translateX(35%) scale(0.8);
+        box-shadow: 0 0 30px 5px rgba(38, 38, 38, 0.3);
+    }
+}
+
+.box {
+    height: 200px;
+    /* background: #ff0; */
+}
+
+.box .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.box .imgBox img {
+    max-width: 100%;
+    transition: transform 2s;
+    min-height: 200px;
+    object-fit: cover;
+}
+
+.box:hover .imgBox img {
+    transform: scale(1.2);
+}
+
+.box .detailsBox {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    bottom: 10px;
+    right: 25px;
+    background: rgba(0, 0, 0, .8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.box:hover .detailsBox {
+    transform: scaleY(1);
+}
+
+.box .detailsBox .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff
+}
+
+.box .detailsBox .content h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #19a6c9;
+}
+
+.box .detailsBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+@media (max-width: 765px) {
+    .box .detailsBox .content p {
+        font-size: 9px;
+    }
+}
+
+.box .detailsBox .content a {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #19a6c9;
+}
+
+#titlePortfolio {
+    margin-top: 4rem;
+}
+
+#titlePortfolio h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#portfolio .card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border: 0;
+}
+
+#portfolio .card .card-title {
+    text-align: left;
+}
+
+#portfolio .card .card-text {
+    text-align: left;
+    color: #747373;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+#portfolio .card a {
+    float: right;
+}
+
+@media (max-width: 765px) {
+    #portfolio {
+        overflow: auto;
+        height: 630px;
+    }
+    #portfolio .card {
+        width: 70%;
+        left: 15%;
+        margin-bottom: 1rem;
+    }
+    #portfolio .card-img-top {
+        max-height: 86px;
+    }
+    #portfolio .card h5 {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    #portfolio .card hr {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #portfolio .card p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: .6rem;
+    }
+    #portfolio .card a {
+        font-size: .7rem;
+    }
+}
